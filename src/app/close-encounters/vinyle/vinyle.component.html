@@ -1,0 +1,12 @@
+<img
+  class="vinyle"
+  #vinyle
+  src="./../../../assets/images/vinyle.png"
+  alt="vinyle"
+  (load)="getVinyle(vinyle)"
+  (click)="vinyleState()"
+/>
+
+<!-- TODO: cacher le bouton play après avoir appuyé (pour éviter d'appuyer plusieurs fois, fait bugger le vinyle-->
+<button (click)="vinyleState(true)" class="button-stroke">Play</button>
+<button (click)="vinyleState(false)" class="button-stroke">Stop</button>

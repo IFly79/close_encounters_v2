@@ -1,0 +1,17 @@
+<div id="center">
+  <div class="content-grid mdl-grid">
+    <div cdkDrag>
+      <app-search-youtube (videoLink)="launchVideo($event)" fxLayoutAlign="end center"></app-search-youtube>
+    </div>
+
+    <div cdkDrag>
+      <app-vinyle></app-vinyle>
+    </div>
+
+    <div>
+      <app-display-video *ngIf="isVideo" [videoLinkEmbed]="videoLink"></app-display-video>
+    </div>
+
+    <app-launchpad cdkDragBoundary="#dragbox"></app-launchpad>
+  </div>
+</div>

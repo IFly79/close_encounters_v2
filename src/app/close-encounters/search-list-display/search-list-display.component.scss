@@ -1,0 +1,21 @@
+:host {
+  img {
+    width: 20wp;
+    margin: 20px;
+  }
+
+  img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+
+  p {
+    max-width: 300px;
+    margin: 20px;
+    margin-top: -5px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,10 @@
+<mat-dialog-content>
+  <section fxLayout="row wrap">
+    <div mat-dialog-content *ngFor="let value of image" fxFlexLayout="space-evenly">
+      <a>
+        <img [src]="value.videoThumbnail" (click)="close(value.videoId)" />
+        <p>{{ value.title }}</p>
+      </a>
+    </div>
+  </section>
+</mat-dialog-content>
